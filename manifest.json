@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Gylph Thief Monkey",
+  "name": "Glyph Thief Monkey",
   "version": "1.1.0",
   "description": "Steals one letter. Ruins everything.",
   "permissions": ["storage"],
