@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7b4a2a"/>
+      <stop offset="100%" stop-color="#4a2a16"/>
+    </radialGradient>
+  </defs>
+
+  <!-- head -->
+  <circle cx="64" cy="58" r="44" fill="url(#g)"/>
+  <!-- face -->
+  <ellipse cx="64" cy="68" rx="30" ry="26" fill="#d7b08a"/>
+
+  <!-- ears -->
+  <circle cx="24" cy="64" r="14" fill="#4a2a16"/>
+  <circle cx="104" cy="64" r="14" fill="#4a2a16"/>
+  <circle cx="24" cy="64" r="8" fill="#d7b08a" opacity="0.9"/>
+  <circle cx="104" cy="64" r="8" fill="#d7b08a" opacity="0.9"/>
+
+  <!-- eyes -->
+  <circle cx="52" cy="58" r="6" fill="#111"/>
+  <circle cx="76" cy="58" r="6" fill="#111"/>
+  <circle cx="50" cy="56" r="2" fill="#fff" opacity="0.9"/>
+  <circle cx="74" cy="56" r="2" fill="#fff" opacity="0.9"/>
+
+  <!-- nose -->
+  <ellipse cx="64" cy="72" rx="7" ry="5" fill="#7a4b2a" opacity="0.8"/>
+
+  <!-- mouth -->
+  <path d="M52 82c6 8 18 8 24 0" fill="none" stroke="#5a2c18" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- tiny hands (because crime) -->
+  <circle cx="42" cy="94" r="6" fill="#d7b08a"/>
+  <circle cx="86" cy="94" r="6" fill="#d7b08a"/>
+</svg>

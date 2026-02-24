@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Letter Heist Monkey Settings</title>
+    <style>
+      body { font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 20px; max-width: 720px; }
+      h1 { font-size: 18px; margin: 0 0 12px; }
+      .row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; gap: 16px; }
+      .row label { font-weight: 600; }
+      .hint { color: #555; font-size: 12px; margin-top: 4px; }
+      .right { display: flex; align-items: center; gap: 10px; }
+      select, input[type="checkbox"] { transform: scale(1.05); }
+      .pill { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #eee; }
+      .footer { margin-top: 14px; color: #666; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>Letter Heist Monkey</h1>
+    <div class="row">
+      <div>
+        <label for="dailyRotation">Daily letter rotation</label>
+        <div class="hint">Same target for the whole day (UTC). Off = new target per page load.</div>
+      </div>
+      <div class="right">
+        <input id="dailyRotation" type="checkbox" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="vowelOnly">Vowel-only mode</label>
+        <div class="hint">Because reading should be mostly suffering.</div>
+      </div>
+      <div class="right">
+        <input id="vowelOnly" type="checkbox" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="stealPunctuation">Steal punctuation mode</label>
+        <div class="hint">Targets punctuation instead of letters.</div>
+      </div>
+      <div class="right">
+        <input id="stealPunctuation" type="checkbox" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="mercyMode">Mercy mode</label>
+        <div class="hint">Does not modify forms, password fields, or editable content.</div>
+      </div>
+      <div class="right">
+        <input id="mercyMode" type="checkbox" />
+        <span class="pill">recommended</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="intensity">Intensity</label>
+        <div class="hint">How many occurrences get removed.</div>
+      </div>
+      <div class="right">
+        <select id="intensity">
+          <option value="0.3">30%</option>
+          <option value="0.6">60%</option>
+          <option value="1">100%</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="footer">
+      Changes apply on new page loads. Reload tabs to re-sabotage.
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
